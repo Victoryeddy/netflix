@@ -1,0 +1,531 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* outline: 1px solid red; */
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Content and Section */
+
+.content-box {
+  padding: 8em 0;
+}
+
+.content-heading {
+  font-size: 3rem !important;
+}
+
+.section-heading {
+  font-size: 2.5rem !important;
+}
+
+.content-paragraph {
+  font-size: 1.5rem !important;
+}
+
+.section3 {
+  min-height: 60vh;
+}
+
+/* video */
+
+.video-container {
+  max-width: 400px;
+  width: 100%;
+  left: 11%;
+  z-index: 1;
+  bottom: 195px;
+}
+
+.video-container2 {
+  max-width: 250px;
+  height: 200px;
+  width: 100%;
+  left: 120px;
+  z-index: 1;
+  bottom: 250px;
+}
+
+.video1 {
+  width: 400px;
+  height: 80%;
+}
+
+.video2 {
+  width: 100%;
+  height: 100%;
+}
+
+.tv-container {
+  z-index: 2;
+  top: 100px;
+}
+
+.television {
+  width: 78%;
+}
+
+.girl-in-phone {
+  width: 70%;
+  height: auto;
+}
+
+.download {
+  position: absolute;
+  width: 50%;
+  height: 20px;
+  padding: 40px;
+  border-radius: 10px;
+  top: 70%;
+  left: 10%;
+}
+
+.download-text {
+  left: 30%;
+  bottom: 25%;
+}
+
+.download-image {
+  width: 17%;
+  left: 10px;
+  top: 2px;
+}
+
+/* Header */
+
+header {
+  min-height: 90vh;
+  background-image: url(../images/CH-en-20220606-popsignuptwoweeks-perspective_alpha_website_small.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.667);
+  background-blend-mode: multiply;
+}
+
+/* nav */
+
+.navbar-brand :is(.netflix-logo) {
+  width: 50% !important;
+  height: 30% !important;
+}
+
+/* background color */
+
+.bg-transparent {
+  background-color: transparent !important;
+}
+
+.bg-accent {
+  background-color: #303030 !important;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #121212 !important;
+}
+
+/* border */
+
+.border-3 {
+  border-width: 10px !important;
+}
+
+.border-dark {
+  border-color: #222222 !important;
+}
+
+/* btn section */
+.btn-outline-light {
+  background-color: transparent !important;
+  padding: 0.5rem 0.6rem !important;
+  color: #fff !important;
+  border: 0.5px solid #fff !important;
+  transition: all 0.6s ease-in-out;
+  font-weight: 300 !important;
+}
+
+.btn-outline-light:hover {
+  background-color: transparent !important;
+  color: #fff !important;
+  border: 1px solid #fff !important;
+}
+
+.btn-outline-accent {
+  background-color: transparent !important;
+  padding: 0.6rem 0.9rem !important;
+  color: #fff !important;
+  border: 0.5px solid #757575 !important;
+  transition: all 0.6s ease-in-out;
+  font-weight: 300 !important;
+}
+
+.btn-outline-accent:hover {
+  background-color: transparent !important;
+  color: #fff !important;
+  border: 1px solid #fff !important;
+}
+
+.btn-go {
+  background-color: red !important;
+  padding: 1rem 1rem !important;
+  border-color: red !important;
+  color: #fff !important;
+  font-size: 1.5rem !important;
+}
+
+.btn-danger {
+  background-color: red !important;
+  padding: 0.44rem 0.6rem !important;
+}
+
+/* input,textarea,button,select section,label */
+
+input:active,
+input:focus,
+textarea:active,
+textarea:focus,
+button:active,
+button:focus,
+select:active,
+select:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.btn:active,
+.btn:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.email-field {
+  z-index: 1;
+}
+
+.label-email {
+  z-index: 3;
+  top: 30%;
+  left: 2%;
+  transition: all 0.2s ease-in-out;
+  transform-origin: 0 0;
+  color: grey;
+}
+
+input:focus + label,
+input:not(:placeholder-shown) + label {
+  font-weight: 500;
+  transform: translateY(-1em) scale(0.8);
+  color: grey;
+}
+
+input + label {
+  font-weight: 200;
+}
+
+.w-70 {
+  width: 70% !important;
+}
+
+/* Accordion Section */
+
+.accordion-button:not(.collapsed) {
+  color: #fff;
+  background-color: #303030;
+}
+
+.accordion-button {
+  background-color: #303030 !important;
+  color: #fff !important;
+}
+
+.accordion-button::after {
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-left: auto;
+  content: "";
+  background-image: url(../svg/plus.svg) !important;
+  background-repeat: no-repeat;
+  background-size: 1.5rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url(../svg/plus.svg) !important;
+  /* transform: rotate(-200deg) !important; */
+}
+
+.faq {
+  width: 80% !important;
+}
+
+/* text styling */
+.text-accent {
+  color: #757575 !important;
+}
+
+.underline-hover:hover {
+  text-decoration: underline !important;
+  color: #757575 !important;
+}
+
+.fs-7 {
+  font-size: 0.875rem !important;
+}
+
+.fw-semi-bold {
+  font-weight: 400 !important;
+}
+
+@media only screen and (max-width: 36rem) {
+  /* Header */
+  header {
+    min-height: 50vh;
+    background-image: url(../images/CH-en-20220606-popsignuptwoweeks-perspective_alpha_website_small.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.667);
+    background-blend-mode: multiply;
+  }
+
+  /* Content */
+
+  .content-heading {
+    font-size: 2rem !important;
+  }
+
+  .content-paragraph {
+    font-size: 1rem !important;
+  }
+  .content-box {
+    padding: 6rem 0;
+  }
+
+  /* nav */
+  .navbar-brand {
+    width: 40%;
+  }
+  .navbar-brand :is(.netflix-logo) {
+    width: 70% !important;
+    height: 60% !important;
+  }
+
+  /* button Sectioin */
+  .btn-outline-light {
+    background-color: transparent !important;
+    padding: 0.25rem 0.3rem !important;
+    color: #fff !important;
+    border: 0.5px solid #fff !important;
+    transition: all 0.6s ease-in-out;
+    font-weight: 300 !important;
+    font-size: 0.875rem !important;
+  }
+
+  .btn-outline-light:hover {
+    background-color: transparent !important;
+    color: #fff !important;
+    border: 1px solid #fff !important;
+  }
+
+  .btn-danger {
+    background-color: red !important;
+    padding: 0.2rem 0.6rem !important;
+  }
+
+  .btn-go {
+    background-color: red !important;
+    padding: 0.6rem 0.6rem !important;
+    border-color: red !important;
+    color: #fff !important;
+    font-size: 1rem !important;
+    margin-left: 6.5rem !important;
+  }
+
+  /* input section */
+
+  .label-email {
+    z-index: 3;
+    top: 12%;
+    left: 2%;
+    transition: all 0.2s ease-in-out;
+    transform-origin: 0 0;
+    color: grey;
+  }
+
+  .email-field {
+    width: 100% !important;
+    padding: 1rem 0;
+  }
+
+  /* video Section */
+
+  .video-container {
+    max-width: 300px;
+    width: 100%;
+    left: 14%;
+    z-index: 1;
+    bottom: 197px;
+  }
+
+  .video1 {
+    width: 85%;
+    height: 20%;
+  }
+
+  .tv-container {
+    z-index: 2;
+    top: 15px;
+  }
+
+  .television {
+    width: 99%;
+  }
+
+  .girl-in-phone {
+    width: 100%;
+  }
+  .download {
+    position: absolute;
+    width: 70%;
+    height: 60px;
+    padding: 5%;
+    border-radius: 5px;
+    top: 70%;
+    left: 15%;
+  }
+
+  .download-image {
+    width: 17%;
+    height: 85%;
+    left: 10px;
+    top: 2px;
+  }
+
+  .video-container2 {
+    max-width: 200px;
+    height: 200px;
+    width: 100%;
+    left: 80px;
+    z-index: 1;
+    bottom: 255px;
+  }
+
+  .video2 {
+    width: 100%;
+    height: 100%;
+  }
+
+  .girl-in-phone-container {
+    left: 15%;
+    bottom: 1%;
+  }
+
+  .faq {
+    width: 100% !important;
+  }
+}
+
+@media only screen and (min-width: 48rem) and (max-width: 62rem) {
+  header {
+    min-height: 80vh;
+    background-image: url(../images/CH-en-20220606-popsignuptwoweeks-perspective_alpha_website_small.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.667);
+    background-blend-mode: multiply;
+  }
+
+  /* Button Section */
+
+  .btn-go {
+    background-color: red !important;
+    padding: 0.9rem 0.9rem !important;
+    border-color: red !important;
+    color: #fff !important;
+    font-size: 1rem !important;
+    margin-left: 14rem !important;
+  }
+
+  /* Video Section */
+
+  .video-container {
+    max-width: 500px;
+    width: 100%;
+    left: 14%;
+    z-index: 1;
+    bottom: 365px;
+  }
+
+  .video1 {
+    width: 98%;
+    height: 15%;
+  }
+
+  .video-container2 {
+    max-width: 350px;
+    height: 200px;
+    width: 100%;
+    left: 135px;
+    z-index: 1;
+    bottom: 400px;
+  }
+
+  .video2 {
+    width: 100%;
+    height: 100%;
+  }
+
+  .tv-container {
+    z-index: 2;
+    top: 40px;
+  }
+
+  .television {
+    width: 99%;
+  }
+
+  .girl-in-phone-container {
+    left: 15%;
+    bottom: 1%;
+  }
+
+  .download {
+    position: absolute;
+    width: 50%;
+    height: 20px;
+    padding: 40px;
+    border-radius: 10px;
+    top: 70%;
+    left: 25%;
+  }
+
+  .download-image {
+    width: 17%;
+    height: 90%;
+    left: 10px;
+    top: 2px;
+  }
+
+  .faq {
+    width: 80% !important;
+  }
+
+  /* Input Section */
+  .email-field {
+    width: 100% !important;
+    padding: 1.2rem 0;
+  }
+
+  .label-email {
+    z-index: 3;
+    top: 12%;
+    left: 1%;
+    transition: all 0.2s ease-in-out;
+    transform-origin: 0 0;
+    color: grey;
+  }
+}
